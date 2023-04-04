@@ -1,0 +1,88 @@
+body{
+    background-color: black;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+.mainEpisodes{
+    width: 100vw;
+    height: calc(100vh-15vh);
+    /* background-color: red; */
+}
+.mainEpisodes .SearchDiv{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.mainEpisodes .SearchDiv textarea{
+    resize: none;
+    width: 50%;
+    height: 4vh;
+    font-size: 2rem;
+    margin: 1rem;
+}
+.mainEpisodes .ResultsDiv{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.mainEpisodes .ResultsDiv .infoCard{
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 30vw;
+    height: 100%;
+    margin: 1rem;
+    /* border: 1px solid white; */
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.411);
+}
+@media (max-width: 600px) {
+    .mainEpisodes .ResultsDiv .infoCard{
+        display: flex; 
+        flex-wrap: wrap; 
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100%;
+        margin: 1rem;
+        /* border: 1px solid white; */
+        box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.411);
+    }
+  }
+.mainEpisodes .ResultsDiv .infoCard .imgDiv {
+    width: 50vw;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.mainEpisodes .ResultsDiv .infoCard .imgDiv img {
+    width: 100%;
+}
+.mainEpisodes .ResultsDiv .infoCard .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+    width: 50vw;
+    height: 33vh;
+    /* background-color: green; */
+}
+.mainEpisodes .ResultsDiv .infoCard .info h3{
+    font-size: 3.5rem;
+}
+.mainEpisodes .ResultsDiv .infoCard .info h4{
+    font-size: 2.5rem;
+}
+.mainEpisodes .ResultsDiv .infoCard .info p{
+    font-size: 1.5rem;
+}
+
+.NotFound{
+font-size: 5rem;
+margin: 10vw;
+/* background-color: red; */
+}

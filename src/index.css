@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    /* overflow-x: ; */
+}
+html{
+    font-size: 62.5%;
+    /* overflow-x: hidden; */
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('./Multimedia/roboto/Roboto-Medium.ttf') format('truetype');
+    /* Aquí puedes agregar otros formatos como woff o woff2 */
+  }

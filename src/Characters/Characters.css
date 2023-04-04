@@ -1,0 +1,154 @@
+.mainCharacters{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: calc(200vh - 15vh);
+    /* background-color: rgb(238, 14, 14); */
+}
+.mainCharacters .botondiv{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.mainCharacters .botondiv button{
+    width: 20rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.mainCharacters .botondiv button:hover{
+    width: 20rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: rgb(58, 57, 57);
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.mainCharacters .Informacion{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
+width: 100vw;
+height: 90%;
+}
+.mainCharacters .Informacion .message{
+    color: white;
+    font-size: 3rem;
+}
+.mainCharacters .Informacion .profileFoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 90%;
+    margin: 4rem;
+    background-color: black;
+}
+.mainCharacters .Informacion .profileFoto img{
+    border: 2px solid white;
+    width: 33vw;
+    height:30vw ;
+    border-radius: 1rem;
+    object-fit: contain;
+}
+.mainCharacters .Informacion .info {
+    width: 33vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+.mainCharacters .Informacion .info h1{
+    font-size: 4rem;
+    margin: 0.5rem 0 0.5rem 8vw;
+}
+.mainCharacters .Informacion .info h2{
+    font-size: 3rem;
+    margin: 0.5rem 0 0.5rem 8vw;
+}
+.mainCharacters .Informacion .info p{
+    font-size: 2rem;
+    margin: 0.5rem 0 0.5rem 8vw;
+}
+.mainCharacters .ListaGenerada{
+    /* background-color: rgb(9, 228, 38); */
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    color: white;
+    /* justify-content: center; */
+}
+.mainCharacters .ListaGenerada h2{
+   font-size: 3rem;
+   margin: 2rem;
+}
+.mainCharacters .ListaGenerada .PersonajeRegistrado{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 5rem;
+    width: 100%;
+}
+.mainCharacters .ListaGenerada .PersonajeRegistrado table thead  {
+    width: 100%;
+    /* background-color: rgb(255, 255, 255); */
+    color: white;
+    height: 4rem;
+}
+.mainCharacters .ListaGenerada .PersonajeRegistrado table  {
+    width: 100%;
+    font-size: 1.7rem;
+    color: white;
+}
+.mainCharacters  .ListaGenerada .PersonajeRegistrado table tbody tr td {
+width: 12.5%;
+height: 1rem;
+/* background-color: blue; */
+text-align: center;
+}
+.mainCharacters .ListaGenerada .PersonajeRegistrado table tbody tr td img {
+    width: 10rem;
+}
+
+@media (max-width: 600px) {
+    .mainCharacters .Informacion .profileFoto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 35%;
+        /* background-color: rgb(255, 0, 0); */
+    }
+    .mainCharacters .Informacion .profileFoto img{
+        border: 2px solid white;
+        width: 80vw;
+        height:80vw ;
+        border-radius: 1rem;
+        object-fit: contain;
+    }
+    .mainCharacters .Informacion .info {
+        width: 100vw;
+        height: 50%;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        color: white;
+    }
+  }

@@ -1,0 +1,132 @@
+.mainHome{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 15vh);
+    width: 100vw;
+    overflow-y: hidden;    
+}
+.mainHome .title {
+    height: 10%;
+}
+.mainHome .title h1{
+    font-size: 5rem;
+}
+.mainHome .info{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    height: 90%;
+}
+.mainHome .info .image{
+    height: 90%;
+    width: 50%;
+    position: relative;
+    display: flex;
+ background-color: rgb(0, 0, 0);
+    justify-content: center;
+}
+.mainHome .info .image .img1{
+    position: relative;
+    background-color: black; 
+
+}
+.mainHome .info .image .img2{
+    position: absolute;
+    width: 33%;
+    top: 0;
+    left: 25;
+    z-index: 1;
+}
+.mainHome .info .text{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mainHome .info .text p{
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    padding: 2rem;
+    
+}
+@media (max-width: 600px) { 
+    .mainHome{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 10vh);
+        width: 100vw;
+        /* overflow-y: hiden;     */
+    }
+    .mainHome .title {
+        height: 10%;
+        /* background-color: red; */
+        padding: 2rem;
+    }
+    .mainHome .title h1{
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+    }
+    .mainHome .info{
+        display: flex;
+        flex-wrap: wrap ;
+        background-color: rgb(0, 0, 0);
+        align-items: center;
+        height: 90%;
+    }
+    .mainHome .info .image{
+        height: 40%;
+        width: 100vw;
+        position: relative;
+        display: flex;
+     background-color: rgb(0, 0, 0);
+        justify-content: center;
+    }
+    .mainHome .info .image .img1{
+        position: relative;
+        background-color: black; 
+    
+    }
+    .mainHome .info .image .img2{
+        position: absolute;
+        width: 33%;
+        top: 0;
+        left: 25;
+        z-index: 1;
+    }
+    .mainHome .info .text{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .mainHome .info .text p{
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 41px;
+        padding: 2rem;
+        
+    }
+    .mainHome .info .text p:first-child{
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        padding: 2rem;
+        
+    }
+}
